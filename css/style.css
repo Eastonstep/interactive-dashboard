@@ -2,3 +2,36 @@ body {
     background-color: lightskyblue;
     font-family: Arial;
 }
+
+#metric-converter {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#metric-converter h2 {
+    margin-bottom: 20px;
+}
+
+#metric-converter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+#metric-converter input,
+#metric-converter select,
+#metric-converter button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#metric-converter button {
+    cursor: pointer;
+}
+
+#conversion-result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}

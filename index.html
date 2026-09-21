@@ -44,6 +44,33 @@
 
             </div>
 
+            <div class="col" id="metric-converter">
+                <h2>Imperial/Metric Converter</h2>
+
+                <form>
+                    <label for="numeric-value">Enter a value:</label>
+                    <input type="number" id="numeric-value" step="any">
+
+                    <label for="conversion-type">Choose a conversion:</label>
+                    <select id="conversion-type">
+                        <option value="inch to centimeter">Inches to Centimeters</option>
+                        <option value="foot to centimeter">Feet to Centimeters</option>
+                        <option value="yard to meter">Yards to Meters</option>
+                        <option value="mile to kilometer">Miles to Kilometers</option>
+                        <option value="centimeter to inch">Centimeters to Inches</option>
+                        <option value="centimeter to foot">Centimeters to Feet</option>
+                        <option value="meter to yard">Meters to Yards</option>
+                        <option value="kilometer to mile">Kilometers to Miles</option>
+                    </select>
+
+                    <button type="submit" id="convert-button">Convert</button>
+                </form>
+
+                <div id="conversion-result"></div>
+
+                <script src="js/metric-converter.js" defer></script>
+
+            </div>
         </div>
     </div>
 </body>

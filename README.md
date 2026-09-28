@@ -52,3 +52,16 @@ BEGIN
     OUTPUT result
 
 END
+
+## Magic Eight Ball
+
+The Magic Eight Ball is a feature that allows users to enter a yes/no question and click the Eight Ball to receive a random answer.
+
+### Technical Features
+
+- Uses JavaScript to randomly select one of eight possible answers.
+- Checks that the user has entered a question before providing an answer.
+- Uses event listeners to respond to clicks on the Magic Eight Ball and reset button.
+- Uses CSS to display and center the answer inside the Eight Ball.
+- Includes a CSS shake animation when the Eight Ball is clicked.
+- Uses a development Git branch before merging the completed feature into the main branch.

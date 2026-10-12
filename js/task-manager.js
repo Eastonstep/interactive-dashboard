@@ -21,3 +21,28 @@ document.getElementById("goal-btn").addEventListener("click", function(event) {
     weeklyGoal(userName, dailyGoal, bonusTasks);
 
 });
+
+    let myTasks = [];
+    let taskList = document.getElementById("task-list");
+    let userTasks = document.createElement("ul");
+
+    userTasks.id = "user-tasks";
+    taskList.appendChild(userTasks);
+
+    let addButton = document.getElementById("add-task");
+    let taskInput = document.getElementById("task-name");
+
+    addButton.addEventListener("click", function() {
+        let task = taskInput.value.trim();
+
+        if (task !== "") {
+            myTasks.push(task);
+
+        let listItem = document.createElement("li");
+            listItem.textContent = task;
+
+            userTasks.appendChild(listItem);
+
+            taskInput.value = "";
+    }
+});
